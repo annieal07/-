@@ -1,0 +1,25 @@
+package tenth;
+import java.util.Scanner;
+public class Trapeziod {
+    
+    public static void trapezoid1(double a , double b, double h) {
+        double S=((a+b)/2)*h;
+        System.out.println("Лицето на трапеца е: "+S);
+    }
+    
+    public static double trapezoid2(double a, double b, double h) {
+        double S=((a+b)/2)*h;
+        return S;
+    }
+    
+    public static void main(String[] args) {
+        // TODO Auto-generated method stub
+        Scanner fani=new Scanner(System.in);
+        double a=fani.nextDouble();
+        double b=fani.nextDouble();
+        double h=fani.nextDouble();
+        trapezoid1(a,b,h);
+        System.out.println("Лицето на трапеца е: "+trapezoid2(a,b,h));
+    }
+ 
+}
